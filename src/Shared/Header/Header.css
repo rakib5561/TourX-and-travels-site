@@ -1,0 +1,14 @@
+.nav-logo {
+  color: #ff7f47 !important;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.nav-link {
+  color: black;
+  font-size: 17px;
+}
+
+.nav-link:hover {
+  color: #ff7f47;
+}
