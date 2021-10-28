@@ -1,0 +1,17 @@
+.footer-wrape {
+  padding: 80px 0px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: #262339;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+
+hr {
+  width: 80%;
+  padding: 1px 0px;
+  margin: 0 auto;
+}
