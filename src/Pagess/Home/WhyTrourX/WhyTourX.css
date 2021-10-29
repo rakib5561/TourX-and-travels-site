@@ -1,0 +1,95 @@
+.Why-tourx-wrap {
+  width: 100%;
+  padding: 80px 0px;
+  background-image: url("../../../images/achiv-shape.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whyTourx-container {
+  width: 1280px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+.whyTourx-content h5 {
+  color: #ff7f47;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.whyTourx-content h1 {
+  font-family: quicksand, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.box-container {
+  display: grid;
+  grid-gap: 30px;
+  width: 1280px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 50px 60px;
+  background-color: #304f47;
+  border-radius: 5px;
+}
+
+/* Responsive for mobile view */
+@media only screen and (max-width: 600px) {
+  .Why-tourx-wrap {
+    padding: 80px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .whyTourx-container {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+  }
+
+  .whyTourx-content h5 {
+    color: #ff7f47;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .whyTourx-content h1 {
+    font-family: quicksand, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    text-transform: capitalize;
+  }
+
+  .box-container {
+    display: grid;
+    grid-gap: 30px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .box {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 50px 60px;
+    background-color: #304f47;
+    border-radius: 5px;
+    margin: 0px 20px;
+  }
+}
