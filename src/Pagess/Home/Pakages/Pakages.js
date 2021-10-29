@@ -30,14 +30,12 @@ const Pakages = () => {
                     pakages.map(pakage => (
                         <div className="card-style">
                             <img src={pakage.image} alt="" />
-
                             <div className="package-price-duration">
                                 <div>{pakage.price}</div>
                                 <div>{pakage.duration}</div>
                             </div>
                             <h5 className="package-title">{pakage.title}</h5>
-
-                            <Link to=''><button className="btn-style">Booking Now</button></Link>
+                            <Link to='/getbooking'><button className="btn-style">Booking Now</button></Link>
 
                         </div>
                     ))

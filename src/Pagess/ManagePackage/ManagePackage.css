@@ -1,0 +1,31 @@
+.manage-package {
+  background-image: url("../../images/achiv-shape.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0px;
+}
+
+.manage-form form {
+  color: black;
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-form form input {
+  margin: 10px 0px;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid #304f47;
+  border-radius: 5px;
+}
+
+/* Responsive for mobile view */
+@media only screen and (max-width: 600px) {
+  .manage-form form {
+    width: 100%;
+  }
+}

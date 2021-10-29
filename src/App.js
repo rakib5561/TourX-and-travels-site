@@ -5,11 +5,12 @@ import Header from './Shared/Header/Header';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './Pagess/NotFound/NotFound';
 import About from './Pagess/About/About';
-import TourPakages from './Pagess/TourPakagess/TourPakages';
 import MyBooking from './Pagess/MyBooking/MyBooking';
 import Contact from './Pagess/Contact/Contact';
 import Login from './Pagess/Login/Login';
 import Footer from './Shared/Footer/Footer';
+import ManagePackages from './Pagess/ManagePackage/ManagePackages';
+import GetBooking from './Pagess/GetBooking/GetBooking';
 
 function App() {
   return (
@@ -31,8 +32,11 @@ function App() {
               <Route path="/about">
                   <About></About>
               </Route>
-              <Route path="/pakages">
-                  <TourPakages></TourPakages>
+              <Route path="/manage">
+                  <ManagePackages></ManagePackages>
+              </Route>
+              <Route path="/getbooking">
+                 <GetBooking></GetBooking>
               </Route>
               <Route path="/booking">
                   <MyBooking></MyBooking>
