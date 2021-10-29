@@ -4,4 +4,41 @@
 }
 
 .pakages-content {
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: grid;
+  width: 1280px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card-style {
+  width: 100%;
+  padding: 40px 0px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgb(17 17 17 / 8%);
+}
+
+.package-price-duration {
+  display: flex;
+  color: #304f47;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  justify-content: space-between;
+  padding: 22px;
+}
+
+.package-title {
+  color: #ff7f47;
+  text-align: left;
+  font-size: 24px;
+  margin-top: 25px;
+  font-weight: 600;
+  padding-bottom: 40px;
+  padding-left: 30px;
 }
