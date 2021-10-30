@@ -1,21 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import SinglePachakgeBooking from '../SinglePackageBooking/SinglePachakgeBooking';
 import './Pakages.css';
 
 const Pakages = () => {
 
-
     const [pakages, setPakages] = useState([]);
-
     useEffect( ()=>{
 
-        fetch('pakages.JSON')
+        fetch('http://localhost:5000/packages')
         .then(res => res.json())
         .then(data => setPakages(data))
 
     },[]);
-
-
+    
+    
     return (
         <div>
             <div className="Tour-pakages-wrap">
@@ -28,16 +26,10 @@ const Pakages = () => {
             <div className="card-container">
                 {
                     pakages.map(pakage => (
-                        <div className="card-style">
-                            <img src={pakage.image} alt="" />
-                            <div className="package-price-duration">
-                                <div>{pakage.price}</div>
-                                <div>{pakage.duration}</div>
-                            </div>
-                            <h5 className="package-title">{pakage.title}</h5>
-                            <Link to='/getbooking'><button className="btn-style">Booking Now</button></Link>
-
-                        </div>
+                        <SinglePachakgeBooking
+                         key={pakage._id} 
+                         pakage={pakage}
+                         ></SinglePachakgeBooking>
                     ))
                 }
             </div>

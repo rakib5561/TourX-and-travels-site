@@ -35,7 +35,7 @@ function App() {
               <Route path="/manage">
                   <ManagePackages></ManagePackages>
               </Route>
-              <Route path="/getbooking">
+              <Route path="/getbooking/:objectId">
                  <GetBooking></GetBooking>
               </Route>
               <Route path="/booking">
