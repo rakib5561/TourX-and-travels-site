@@ -1,3 +1,15 @@
 .login-page {
   padding: 80px 0px;
 }
+
+.log-out-btn {
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.log-out-btn:hover {
+  color: #ff7f47;
+}

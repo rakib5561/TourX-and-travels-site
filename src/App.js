@@ -11,11 +11,13 @@ import Login from './Pagess/Login/Login';
 import Footer from './Shared/Footer/Footer';
 import ManagePackages from './Pagess/ManagePackage/ManagePackages';
 import GetBooking from './Pagess/GetBooking/GetBooking';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
-
+      <AuthProvider>
       <Router>
       <Header></Header>
         <Switch>
@@ -35,9 +37,11 @@ function App() {
               <Route path="/manage">
                   <ManagePackages></ManagePackages>
               </Route>
-              <Route path="/getbooking/:objectId">
+
+              <PrivateRoute path="/getbooking/:objectId">
                  <GetBooking></GetBooking>
-              </Route>
+              </PrivateRoute>
+              
               <Route path="/booking">
                   <MyBooking></MyBooking>
               </Route>
@@ -54,7 +58,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
-
+      </AuthProvider>
     </div>
   );
 }

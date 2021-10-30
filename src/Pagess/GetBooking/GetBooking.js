@@ -11,12 +11,14 @@ const GetBooking = () => {
         fetch(`http://localhost:5000/packages/${objectId}`)
             .then(res=>res.json())
             .then(data => setBookPackage(data))
-           
     },[]);
 
 
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit,reset } = useForm();
+    const onSubmit = data => {
+        console.log(data);
+        reset();
+    };
 
     return (
         <div className="booking-wrape">
@@ -41,6 +43,7 @@ const GetBooking = () => {
                 </form>
             </div>
             </div>
+
         </div>
     );
 };
