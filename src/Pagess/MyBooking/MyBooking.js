@@ -6,7 +6,7 @@ const MyBooking = () => {
     const [bookPackage, setBookPackage] = useState([]);
     useEffect( ()=>{
 
-        fetch('http://localhost:5000/showPackage')
+        fetch('https://possessed-blood-92374.herokuapp.com/showPackage')
         .then(res => res.json())
         .then(data => setBookPackage(data))
 

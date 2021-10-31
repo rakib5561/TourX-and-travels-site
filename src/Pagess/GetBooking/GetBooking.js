@@ -9,7 +9,7 @@ const GetBooking = () => {
     const {objectId} = useParams();
     const [bookPackage, setBookPackage] = useState({});
     useEffect(()=>{
-        fetch(`http://localhost:5000/packages/${objectId}`)
+        fetch(`https://possessed-blood-92374.herokuapp.com/packages/${objectId}`)
             .then(res=>res.json())
             .then(data => setBookPackage(data))
     },[]);
@@ -18,7 +18,7 @@ const GetBooking = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
 
-        axios.post('http://localhost:5000/showPackage', data)
+        axios.post('https://possessed-blood-92374.herokuapp.com/showPackage', data)
             .then(res =>{
                if(res.data.insertedId){
                    alert("Successfully booking completed");

@@ -7,7 +7,7 @@ const Pakages = () => {
     const [pakages, setPakages] = useState([]);
     useEffect( ()=>{
 
-        fetch('http://localhost:5000/packages')
+        fetch('https://possessed-blood-92374.herokuapp.com/packages')
         .then(res => res.json())
         .then(data => setPakages(data))
 

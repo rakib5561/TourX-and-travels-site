@@ -1,5 +1,6 @@
+require('dotenv').config()
 const firebaseConfig = {
-    apiKey:" AIzaSyAelQonqd4E20vTU9o8B1gzKfWrb_Ia4cs",
+    apiKey:`${process.env.procREACT_API_KEY}`,
     authDomain: "tourx-6a075.firebaseapp.com",
     projectId: "tourx-6a075",
     storageBucket: "tourx-6a075.appspot.com",
