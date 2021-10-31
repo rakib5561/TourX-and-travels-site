@@ -1,0 +1,23 @@
+.booking_list {
+  padding: 80px 0px;
+}
+
+.booking-container {
+  width: 1180px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.bookingList-card {
+  color: white;
+  text-align: left;
+  padding: 20px 20px;
+  background-color: #304f47;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgb(17 17 17 / 8%);
+}
+
+.card-date {
+  color: #ff7f47;
+  text-align: center;
+}

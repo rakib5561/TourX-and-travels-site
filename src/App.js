@@ -41,10 +41,9 @@ function App() {
               <PrivateRoute path="/getbooking/:objectId">
                  <GetBooking></GetBooking>
               </PrivateRoute>
-              
-              <Route path="/booking">
+              <PrivateRoute path="/booking">
                   <MyBooking></MyBooking>
-              </Route>
+              </PrivateRoute>
               <Route path="/contact">
                   <Contact></Contact>
               </Route>

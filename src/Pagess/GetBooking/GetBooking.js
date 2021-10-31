@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './GetBooking.css';
 import { useParams } from 'react-router-dom';
 import { useForm } from "react-hook-form";
+import axios from 'axios';
 
 const GetBooking = () => {
 
@@ -16,7 +17,18 @@ const GetBooking = () => {
 
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
-        console.log(data);
+
+        axios.post('http://localhost:5000/showPackage', data)
+            .then(res =>{
+               if(res.data.insertedId){
+                   alert("Successfully booking completed");
+                   reset();
+               }
+               else{
+                   alert("Booking not completed");
+               }
+            })
+
         reset();
     };
 
@@ -33,11 +45,14 @@ const GetBooking = () => {
                 <h4 className="booking-form-title"> Book This Package</h4>
                 <form className="booking-form" onSubmit={handleSubmit(onSubmit)}>
                     
+                    <input {...register("packagename", { required: true, maxLength: 25 })} placeholder="Package Name" />
                     <input {...register("name", { required: true, maxLength: 25 })} placeholder="Your Name" />
                     <input {...register("email")} placeholder="Your Email" />
                     <input type="number" {...register("phone")} placeholder="Your Mobile" />
                     <input type="date" {...register("date")} />
-                    <textarea rows="8"  type="text" {...register("phone")} placeholder="Your massage" />
+                    
+                    <textarea rows="8"  type="text" {...register("massage")} placeholder="Your massage" />
+                    
                     <input className="btn-style" type="submit" />
 
                 </form>

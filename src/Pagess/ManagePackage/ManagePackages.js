@@ -8,7 +8,6 @@ const ManagePackages = () => {
     
     const onSubmit = data => {
         console.log(data);
-
         axios.post('http://localhost:5000/packages', data)
             .then(res =>{
                if(res.data.insertedId){

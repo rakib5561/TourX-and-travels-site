@@ -1,0 +1,41 @@
+.contact-wrape {
+  padding: 80px 0px;
+}
+
+.contact-container {
+  width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.contact-content {
+  text-align: left;
+}
+
+.contact-content h1 {
+  font-size: 38px;
+  color: #ff7f47;
+  padding: 15px 10px;
+}
+
+.contact-content p {
+  font-size: 17px;
+  color: #304f47;
+  padding: 10px 15px;
+  line-height: 28px;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.form-style input {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
